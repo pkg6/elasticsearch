@@ -11,12 +11,6 @@ abstract class IndexAbstract implements IndexInterface
     protected string $index;
     protected string $type = "doc";
 
-    public function __construct($index, $type = "doc")
-    {
-        $this->index = $index;
-        $this->type = $type;
-    }
-
     public function getIndex(): string
     {
         return $this->index;

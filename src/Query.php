@@ -10,8 +10,9 @@ use Pkg6\Elasticsearch\Conditions\Range;
 use Pkg6\Elasticsearch\Conditions\Ranges\Values;
 use Pkg6\Elasticsearch\Conditions\Script;
 use Pkg6\Elasticsearch\Conditions\Terms;
+use Pkg6\Elasticsearch\Contracts\QueryInterface;
 
-class Query implements JsonSerializable
+class Query implements QueryInterface
 {
     protected array $query = [
         'bool' => [
