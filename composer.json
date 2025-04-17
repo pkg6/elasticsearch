@@ -1,0 +1,27 @@
+{
+  "name": "pkg6/elasticsearch",
+  "description": "Using Elasticsearch in the simplest way possible",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "zhiqiang",
+      "email": "zhiqiang2033@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ext-json": "*",
+    "elasticsearch/elasticsearch": "~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pkg6\\Elasticsearch\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
